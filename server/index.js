@@ -26,8 +26,9 @@ import {
   dataOverallStat,
   dataAffiliateStat,
 } from "./data/index.js";
-// CONFIGURATION
 
+
+// CONFIGURATION
 dotenv.config();
 const app = express();
 app.use(express.json());

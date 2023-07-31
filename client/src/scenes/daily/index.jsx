@@ -47,6 +47,7 @@ const Daily = () => {
     return [formattedData];
   }, [data, startDate, endDate]); // eslint-disable-line react-hooks/exhaustive-deps
 
+  console.log("Daily", formattedData);
   return (
     <Box m="1.5rem 2.5rem">
       <Header titel="DAILY SALES" subtitle="Chart of daily sales" />
@@ -121,6 +122,7 @@ const Daily = () => {
             }}
             yFormat=" >-.2f"
             curve="catmullRom"
+            enableArea={true}
             axisTop={null}
             axisRight={null}
             axisBottom={{
